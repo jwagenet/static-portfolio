@@ -2,10 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro|Source+Serif+Pro:600,400);
 
 /*reset*/
-html {margin:0;padding:0;border:0;}
+html {margin:0;padding:0;border:0;font-size:100%;}
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
-body {line-height:1.5;background:white;}
+body {line-height:1.25;background:white;}
 table {border-collapse:separate;border-spacing:0;}
 caption, th, td {text-align:left;font-weight:normal;float:none !important;}
 table, th, td {vertical-align:middle;}
@@ -16,7 +16,7 @@ a img {border:none;}
 
 body {  color:#000D12;background:#fff;
         font-family:"Source Serif Pro","Helvetica Neue", Arial, Helvetica, sans-serif;
-        font-weight:400;}
+        font-weight:400;font-size:85%}
 
 html{	height:100%;}
 			
@@ -26,16 +26,24 @@ section{width:100%;padding:0 36px 0 144px ;}
 			
 h1{		font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 					font-size:60px;letter-spacing:-3px;padding-top:10px;}
+h2{		font-size:80%;font-weight:600;text-transform:uppercase;}
 ul{		list-style:none;}
 
-	ul li:before{	content:"» ";
-				margin-right:.5em;}
+	ul li:before{	content:"» ";	
+				margin-right:.5em;
+				margin-left:-1.25em;}
+	li{			margin-left:1.25em;}
+	.twocol{	-webkit-columns:50% 2;}
 					
-					
+p, section{ 	margin-top:.5em;}
 a{		color:#030C0C;}
 
 .bb{	font-weight:700;}
 .b{		font-weight:600;}
 .l{		font-weight:300;}
-			
-			
+
+hr{		background: repeating-linear-gradient(45deg,
+					rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) 5px,
+					#000D12 5px,#000D12 10px);
+		height:.5em;
+		border:0;}
