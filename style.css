@@ -26,8 +26,12 @@ section{width:100%;padding:0 36px 0 144px ;}
 			
 h1{		font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 					font-size:60px;letter-spacing:-3px;padding-top:10px;}
+ul{		list-style:none;}
 
-
+	ul li:before{	content:"» ";
+				margin-right:.5em;}
+					
+					
 a{		color:#030C0C;}
 
 .bb{	font-weight:700;}
