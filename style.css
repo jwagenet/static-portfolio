@@ -14,20 +14,24 @@ blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
 
+
+
 body {  color:#000D12;background:#fff;
         font-family:"Source Sans Pro","Helvetica Neue", Arial, Helvetica, sans-serif;
-        font-weight:400;font-size:85%;padding-bottom:30px;}
+        font-weight:400; margin:10px auto;max-width:700px;line-height:1.2;
+		font-size:18px;color:#333;padding:0 10px}
 
 html{	height:100%;}
 			
-#wrapper{width:864px;margin:0 auto;}
-header{	width:100%;padding:0 36px;}
-section{width:80%;padding:0 36px 0 0 ;margin:0 auto;}
+#wrapper{width:700px;margin:0 auto;}
+header{width:100%;}
+section{width:100%;margin:0 auto;}
 			
 h1{		font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
 					font-size:60px;letter-spacing:-3px;padding-top:10px;}
-h2{		font-size:80%;font-weight:700;text-transform:uppercase;}
+h2{		font-size:15px;font-weight:700;text-transform:uppercase;}
 h3{		font-weight:700;}
+
 ul{		list-style:none;}
 
 	ul li:before{	content:"» ";	
@@ -36,9 +40,13 @@ ul{		list-style:none;}
 	li{			margin-left:1.25em;}
 	.twocol{	-webkit-columns:50% 2;}
 					
-p, section{ 	padding-top:.5em;}
-section{		margin-top:2em;}
-a{		color:#030C0C;}
+p{ 	padding-top:10px;}
+p.np{	padding:0;}
+section{		margin:20px 0;display:block;clear:both;overflow:hidden;}
+
+a{		color:#333;}
+	a:hover {color:#777;text-decoration:none;border-bottom:solid 1px #777;}
+	nav a{margin-right:10px;}
 
 .bb{	font-weight:700;}
 .b{		font-weight:600;}
@@ -52,4 +60,10 @@ hr{		background: repeating-linear-gradient(45deg,
 		height:.5em;
 		border:0;}
 		
-img{	width:250px;}
+img{	float:left;width:250px; margin-right:20px;}
+
+
+.image{	text-align:center;}
+.image img{height:250px;width:auto;display:inline-block;float:none;}
+.image img:last-of-type{	margin:0;}
+.image p{	font-size:13px;}
