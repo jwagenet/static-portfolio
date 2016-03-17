@@ -30,16 +30,27 @@
 			</section>
 			<section>
 				<h2>Purpose</h2>
-				<ul>Use instrumentation methods learned in class to evaluate air circulation in room.</ul>
+				<ul>Use instrumentation methods	to evaluate sensor variation and test air circulation in a room.</ul>
 			</section>
 			<section>
-				<h2>Oops! Still under construction.</h2>
-				
+				<h2>Requirements</h2>
+				<ul><li>Create test plan for evaluating sensors and taking temperature measurements.</li>
+				<li>Run control test for thermocouples.</li>
+				<li>Evaluate thermocouple measurements for impact of error and noise.</li>
+				<li>Take long temperature measurements under changing system conditions.</li></ul>
 			</section>
 						
 			<section class="image">
 				<img style="height:400px;" src="./heat01.png" />
-				<p>Floor plan of testd room, including positions of doors, air vents (hashed boxes), adn thermocouple locations (circles).</p>
+				<p>Floor plan of tested room, including positions of doors, air vents (hashed boxes), and thermocouple locations (circles).</p>
+			</section>
+			
+			<section>
+				<h2>Procedures</h2>
+				<ul><li>Arrange thermocouples in room for varied measurement.</li>
+				<li>Take hour long measurement of room while thermostat is heating up.</li>
+				<li>Take ten minute measurement with room open to breezeway along left doors.</li>
+				<li>Take control test with thermocouples at constant temperature.</li></ul>
 			</section>
 			
 			<section class="image">
@@ -47,9 +58,26 @@
 				<p>Heatmap of heating test. Room is closed to outside environment with thermostat set to high heat.</p>
 			</section>
 			
+			<section>
+				<h2>Results</h2>
+				<ul>The control test measurements are used to evaluate data accuracy:
+				<li>About 0.1°C of bias error is observed from the thermocouples compared to control.</li>
+				<li>Measurement noise adds up to a standard deviation of about 0.1°C.</li></ul>
+				<ul>Animated heatmaps of the thermal data are prepared in MatLab:
+				<li>Approximations of temperature gradients in rooms are interpolated/extrapolated from the eight thermocouple measurements.</li>
+				<li>Each time segment is layered in an animation for both datasets.</li></ul>
+			</section>
+			
 			<section class="image">
 				<img style="width:700px;height:auto;" src="./breeze.gif" />
 				<p>Heat map of cooling test. Room is open to breezeway between doors on left side with thermostat off.</p>
+			</section>
+			
+			<section>
+				<h2>Caveats</h2>
+				<ul><li>Bias error estimation for the sensors is limited by the accuracy of the control thermometer.</li>
+				<li>Extrapolated data around edges of room are likely very inaccurate, and are left for the visualization.</li>
+				<li>More sensors or better placed sensors would yield a better set of data.</li></ul>
 			</section>
 						
 			
