@@ -19,7 +19,7 @@ a img {border:none;}
 body {  color:#000D12;background:#fff;
         font-family:"Source Sans Pro","Helvetica Neue", Arial, Helvetica, sans-serif;
         font-weight:400; margin:10px auto;max-width:700px;line-height:1.2;
-		font-size:18px;color:#333;padding:0 10px}
+		font-size:16px;color:#333;padding:0 10px}
 
 html{	height:100%;}
 			
@@ -61,6 +61,19 @@ hr{		background: repeating-linear-gradient(45deg,
 		border:0;}
 		
 img{	float:left;width:250px; margin-right:20px;}
+table{	width:100%;
+		
+		font-size:14px;
+}
+
+th{		font-weight:600;
+		padding: 3px;
+		border-bottom:1px solid #333;
+}
+
+td{		padding: 2px;}
+td:first-child, th:first-child{ border-left:1px solid #333;}
+td:last-child, th:last-child{ border-right:1px solid #333;}
 
 
 .image{	text-align:center;}
