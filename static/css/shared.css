@@ -1,0 +1,82 @@
+/*#03658C #038C8C #F2E205 #F27329 #F24130 #000D12*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro|Source+Serif+Pro:600,400);
+
+/*reset*/
+html {margin:0;padding:0;border:0;font-size:100%;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+body {line-height:1.25;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+
+
+
+body {  color:#000D12;background:#fff;
+        font-family:"Source Sans Pro","Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-weight:400; margin:10px auto;max-width:700px;line-height:1.2;
+		font-size:16px;color:#333;padding:0 10px}
+
+html{	height:100%;}
+			
+#wrapper{width:700px;margin:0 auto;}
+header{width:100%;}
+section{width:100%;margin:0 auto;}
+			
+h1{		font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
+					font-size:60px;letter-spacing:-3px;padding-top:10px;}
+h2{		font-size:15px;font-weight:700;text-transform:uppercase;}
+h3{		font-weight:700;}
+
+ul{		list-style:none;}
+
+	ul li:before{	content:"» ";	
+				margin-right:.5em;
+				margin-left:-1.25em;}
+	li{			margin-left:1.25em;}
+	.twocol{	-webkit-columns:50% 2;}
+					
+p{ 	padding-top:10px;}
+p.np{	padding:0;}
+section{		margin:20px 0;display:block;clear:both;overflow:hidden;}
+
+a{		color:#333;}
+	a:hover {color:#777;text-decoration:none;border-bottom:solid 1px #777;}
+	nav a{margin-right:10px;}
+
+.bb{	font-weight:700;}
+.b{		font-weight:600;}
+.l{		font-weight:300;}
+.rt{	float:right;}
+.TT{	text-transform:uppercase;}
+
+hr{		background: repeating-linear-gradient(45deg,
+					rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) 5px,
+					#000D12 5px,#000D12 10px);
+		height:.5em;
+		border:0;}
+		
+img{	float:left;width:250px; margin-right:20px;}
+table{	width:100%;
+		
+		font-size:14px;
+}
+
+th{		font-weight:600;
+		padding: 3px;
+		border-bottom:1px solid #333;
+}
+
+td{		padding: 2px;}
+td:first-child, th:first-child{ border-left:1px solid #333;}
+td:last-child, th:last-child{ border-right:1px solid #333;}
+
+
+.image{	text-align:center;}
+.image img{height:250px;width:auto;display:inline-block;float:none;}
+.image img:last-of-type{	margin:0;}
+.image p{	font-size:13px;}
