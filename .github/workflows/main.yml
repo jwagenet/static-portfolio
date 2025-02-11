@@ -11,8 +11,8 @@ jobs:
       - name: deploy and build on droplet
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USER }}
+          key: ${{ secrets.DROPLET_KEY }}
           # port: ${{ secrets.PORT }}
           script: /root/build-portfolio.sh
