@@ -1,4 +1,3 @@
-
 <script>
     import { onMount } from 'svelte';
     import ConditionalLink from "$lib/ConditionalLink.svelte"
@@ -8,19 +7,12 @@
         document.querySelector(".tag-selector").addEventListener("click", (event) => {
             if (!event.target.classList.contains("tag-toggle")) return;
 
-            // Get all toggle options
             let allOptions = [...document.querySelectorAll(".tag-toggle")].map(el =>
                 el.classList[1] // Extracts class like 'option-a', 'option-b', etc.
             );
 
-            // Find the selected class (excluding "toggle" and "active")
             let selectedClass = allOptions.find(cls => event.target.classList.contains(cls));
-            console.log(selectedClass)
-
-            // Check if the clicked toggle is already active
             let isAlreadyActive = event.target.classList.contains("active");
-
-            // Remove active class from all toggles & labels
             document.querySelectorAll(".tag-toggle, .tag-label").forEach(el => el.classList.remove("active"));
 
             // If the clicked toggle was active, turn everything off and show all content
@@ -29,11 +21,10 @@
                 return;
             }
 
-            // Add active class to the selected toggle and label
+            // Add active class to the selected toggle and label, hide others
             event.target.classList.add("active");
             document.querySelectorAll(`.tag-label.${selectedClass}`).forEach(el => el.classList.add("active"));
 
-            // Show only the selected content, hide others
             document.querySelectorAll(".tag-section").forEach(el => {
                 let containsSelected = el.classList.contains(selectedClass);
                 el.classList.toggle("hidden", !containsSelected);
@@ -42,14 +33,10 @@
     });
 </script>
 
-<style>
-
-</style>
-
 <h1>Projects</h1>
 <h3 class="tag-selector">Tags
-<span class="tag-toggle mech">mech</span>
-<span class="tag-toggle sw">sw</span>
+    <span class="tag-toggle mech">mech</span>
+    <span class="tag-toggle sw">sw</span>
 </h3>
 
 {#each data.summaries as { isContent, slug, title, thumb, location, years, tags, summary, classes }}
@@ -68,4 +55,3 @@
     </ConditionalLink>
 </div>
 {/each}
-
