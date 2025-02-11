@@ -14,7 +14,7 @@ export default {
         prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
 				// ignore deliberate link to shiny 404 page
-				if (path === '/resume') {
+				if (path === '/resume' || path === "/puzzle-stats/") {
 					return;
 				}
 
