@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Jonathan Wagenet</title>
+</svelte:head>
+
 <section>
     <p>I'm a mechatronics engineer interested in robotics, 3D printing, and product design.</p>
     <p>I complement my mechanical training with electronics and programming experience.</p>

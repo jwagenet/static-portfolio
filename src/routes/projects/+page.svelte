@@ -33,6 +33,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>Jonathan Wagenet | Projects</title>
+</svelte:head>
+
 <h1>Projects</h1>
 <h3 class="tag-selector">Tags
     <span class="tag-toggle mech">mech</span>
