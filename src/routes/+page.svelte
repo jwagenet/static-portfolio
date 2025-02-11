@@ -1,6 +1,6 @@
-<script>
+<!-- <script>
     import img from "$lib/images/index.jpg";
-</script>
+</script> -->
 
 
 <section>
@@ -11,5 +11,5 @@
 </section>
 
 <section class="image">
-    <img style="width:700px;height:auto;" src={img} />
+    <img style="width:700px;height:auto;" src="/images/index.jpg" />
 </section>
