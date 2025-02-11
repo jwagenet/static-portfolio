@@ -22,31 +22,45 @@ body {  color:#000D12;background:#fff;
 		font-size:16px;color:#333;padding:0 10px}
 
 html{	height:100%;}
-			
+
 #wrapper{width:700px;margin:0 auto;}
 header{width:100%;}
 section{width:100%;margin:0 auto;}
-			
-h1{		font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
-					font-size:60px;letter-spacing:-3px;padding-top:10px;}
-h2{		font-size:15px;font-weight:700;text-transform:uppercase;}
-h3{		font-weight:700;}
+
+h1{	font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
+    font-size:36px; font-weight: 600; margin: 20px 0;}
+
+header h1{	font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
+            font-size:60px;letter-spacing:-3px;padding-top:10px; margin:0;}
+
+/* h2{		font-size:15px;font-weight:700;text-transform:uppercase;} */
+h2{		font-weight:700;}
 
 ul{		list-style:none;}
 
-	ul li:before{	content:"» ";	
+	ul li:before{	content:"» ";
 				margin-right:.5em;
 				margin-left:-1.25em;}
 	li{			margin-left:1.25em;}
 	.twocol{	-webkit-columns:50% 2;}
-					
+
 p{ 	padding-top:10px;}
 p.np{	padding:0;}
 section{		margin:20px 0;display:block;clear:both;overflow:hidden;}
 
-a{		color:#333;}
+a{	color:#333;}
+
 	a:hover {color:#777;text-decoration:none;border-bottom:solid 1px #777;}
 	nav a{margin-right:10px;}
+
+    a.section {
+        text-decoration:none;
+    }
+
+    /* a.section section:hover {
+        border-right: 1px solid #333;
+    } */
+
 
 .bb{	font-weight:700;}
 .b{		font-weight:600;}
@@ -54,15 +68,39 @@ a{		color:#333;}
 .rt{	float:right;}
 .TT{	text-transform:uppercase;}
 
+.tag-label, .tag-toggle {
+    border: 1px solid #000D12;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.active {
+    border: 1px solid #000D12;
+    background-color: #000D12;
+    color: #fff;
+}
+
+.tag-selector .tag-label:hover, .tag-selector .tag-toggle:hover {
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
 hr{		background: repeating-linear-gradient(45deg,
 					rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) 5px,
 					#000D12 5px,#000D12 10px);
 		height:.5em;
 		border:0;}
-		
+
 img{	float:left;width:250px; margin-right:20px;}
 table{	width:100%;
-		
+
 		font-size:14px;
 }
 
@@ -74,7 +112,6 @@ th{		font-weight:600;
 td{		padding: 2px;}
 td:first-child, th:first-child{ border-left:1px solid #333;}
 td:last-child, th:last-child{ border-right:1px solid #333;}
-
 
 .image{	text-align:center;}
 .image img{height:250px;width:auto;display:inline-block;float:none;}
