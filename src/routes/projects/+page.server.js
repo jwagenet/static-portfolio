@@ -1,7 +1,6 @@
 import { projects } from './data.js';
 
 export function load() {
-    console.log(projects)
 	return {
 		summaries: projects.map((project) => ({
 			isContent: project.content != "" ? true : false,

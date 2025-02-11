@@ -4,7 +4,7 @@
 
 
 <header>
-    <a style="text-decoration:none;" href="./index.htm"><h1><span class="bb">Jonathan</span><span class="l">Wagenet</span></h1></a>
+    <a style="text-decoration:none;" href="/"><h1><span class="bb">Jonathan</span><span class="l">Wagenet</span></h1></a>
     <nav>
         <a href="/">Home</a>
         <a href="/resume">Resume</a>
