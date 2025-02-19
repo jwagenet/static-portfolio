@@ -3,8 +3,10 @@
 </svelte:head>
 
 <section>
-    <p>I'm a mechatronics engineer interested in robotics, 3D printing, and product design.</p>
-    <p>I complement my mechanical training with electronics and programming experience.</p>
+    <p>I'm a mechatronics engineer with background in mechanical design and hardware/software automation.
+        <br/><br/>In my recent work, I designed test fixtures for functional testing of surgical robot sub-assemblies at all stages from prototype to manufacturing integration to debugging and upgrading misbehavers.
+        <br/><br/>More broadly, I am interested in robotics, factory automation, 3D printing, and product design. Sometimes I make little software projects and websites.
+    </p>
     <br />
     <ul>Find me on
         <li><a href="https://github.com/jwagenet">Github</a></li>
