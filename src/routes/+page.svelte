@@ -8,13 +8,13 @@
         <br/><br/>More broadly, I am interested in robotics, factory automation, 3D printing, and product design. Sometimes I make little software projects and websites.
     </p>
     <br />
-    <ul>Find me on
+    <!-- <ul>Find me on
         <li><a href="https://github.com/jwagenet">Github</a></li>
         <li><a href="https://www.linkedin.com/in/jonathanwagenet">LinkedIn</a></li>
     </ul>
-    <br />
+    <br /> -->
     <h2>Doodles</h2>
-    <ul>
+    <ul style="width: 200px; margin:0 auto;">
         <li><a href="/puzzle-stats/">NYT Mini Stats</a></li>
     </ul>
 </section>

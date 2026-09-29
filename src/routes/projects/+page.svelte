@@ -46,7 +46,7 @@
 {#each data.summaries as { isContent, slug, title, thumb, location, years, tags, summary, classes }}
 <div class="tag-section {classes}">
     <ConditionalLink {isContent} class="section" href="/projects/{slug}">
-        <section>
+        <section class="project">
             {#if thumb != ""}
             <img src="/images/projects/{thumb}" alt={slug}>
             {/if}
